@@ -3,41 +3,96 @@
 
 <head>
   <title>Greg's List</title>
-  <meta name="description" content="Search for stuff real easy!">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="description" content="Search for stuff real easy!"/>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
+<body>
 
-<nav>
-    <h1 class="navitem">Greg's List</h1>
-    <h2 class="navitem right"><a href="">Account</a></h2>
-    <h2 class="navitem right"><a href="">Post</a></h2>
-</nav>
+  <nav>
+      <h1>Greg's List</h1>
+      <h2><a href="#post">Account</a></h2>
+      <h2><a href="#account">Post</a></h2>
+  </nav>
 
-<main>
+  <main>
 
-  <div class="searchBar">
-    <label style>Search Jobs</label>
-    <form style="padding-top: 5px;">
-      <input type="text" placeholder="search software jobs">
-      <img src="images/magnifying-glass.png">
-    </form>
-  </div>
+    <div>
+      <form>
+        <label for="search-bar">Search Jobs</label>
+        <div>
+          <input type="text" placeholder="search software jobs" id="search-bar">
+          <a href="#search">
+            <img src="images/magnifying-glass.png">
+          </a>
+        </div>
 
-  <div>
-    <ul class="navContainer">
-      <li id="prev">Prev</li>
-      <li>1 to 100 of 179</li>
-      <li id="next">Next</li>
-    </ul>
-  </div>
+      </form>
+    </div>
 
-  <div>
-    <ul class="listContainer">
-      <li>June 22 <a href=""> Technical Project Manager</a> Midtown East</li>
-      <li>June 21 <a href=""> Frontend Developer</a> SoHo</li>
-      <li>June 20 <a href=""> Senior Python Developer / Cofounder</a> Flatiron</a>
-    </ul>
-</main>
+    <div id="jobList">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Job</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="trim-date">June 22</td>
+            <td>
+              <a href="#1" target="_blank">Technical Project Manager</a>
+            </td>
+            <td>Midtown East</td>
+          </tr>
+          <tr>
+            <td>June 21</td>
+            <td>
+              <a href="#2" target="_blank">Frontend Developer</a>
+            </td>
+            <td>SoHo</td>
+          </tr>
+          <tr>
+            <td>June 20</td>
+            <td>
+              <a href="#3" target="_blank"> Senoir Pythong Developer/Cofounder</a>
+            </td>
+            <td>Flatiron</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="navCtrl">
+
+      <a href="#prev" class="navBox">
+        <div class="centerBox">
+          <img src="images/left_arrow.png"/>
+          <p>Prev</p>
+        </div>
+      </a>
+
+      <div class="navBox">
+        <p>1 to 10 of 34</p>
+      </div>
+
+      <a href="#next" class="navBox">
+        <div class="centerBox">
+          <p>Next</p>
+          <img src="images/right_arrow.png"/>
+        </div>
+      </a>
+
+    </div>
+
+
+
+  </main>
+
+</body>
 
 </html>
