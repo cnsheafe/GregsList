@@ -16,10 +16,10 @@ nav * {
   display: inline-block;
 }
 
-nav h2 {
+/*nav h2 {
   float: right;
   margin-right: 20px;
-}
+}*/
 
 main {
   position: relative;
@@ -66,6 +66,7 @@ table {
 
 th, td {
   text-align: left;
+  font-size: 25px;
 }
 
 td {
