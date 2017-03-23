@@ -1,101 +1,88 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Greg's List</title>
-  <meta name="description" content="Search for stuff real easy!"/>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-  <link rel="stylesheet" type="text/css" href="css/main.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-</head>
+  <head>
+    <title>Greg's List</title>
+    <meta name="description" content="Search for stuff real easy!"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  </head>
 
-<body>
+  <body>
 
-  <header>
-    <nav id="nav-top">
-      <ul>
-        <li>Greg's List</li>
-        <li><a href="#post">Account</a></li>
-        <li><a href="#account">Post</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <nav id="nav-top">
+        <ul>
+          <li>Greg's List</li>
+          <li><a href="#post">Account</a></li>
+          <li><a href="#account">Post</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
+    <main>
 
-    <section>
-      <form>
-        <label for="search-bar">Search Jobs</label>
-        <input type="search" placeholder="search software jobs" id="search-bar">
-        <input type="image" src="images/magnifying-glass.png" id="search-button">
-      </form>
-    </section>
-    <!-- I'd like to see use listings instead of table -->
+      <section>
+        <form>
+          <label for="search-bar">Search Jobs</label>
+          <input type="search" placeholder="search software jobs" id="search-bar">
+          <input type="image" src="images/magnifying-glass.png" id="search-button">
+        </form>
+      </section>
+      <!-- I'd like to see use listings instead of table -->
 
-    <section id="job-list">
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Job</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="trim-date">June 22</td>
-            <td>
-              <!-- Anchor tags should always be inside a list item or a paragraph, they never exist on their own -->
-              <a href="#1" target="_blank">Technical Project Manager</a>
-            </td>
-            <td>Midtown East</td>
-          </tr>
-          <tr>
-            <td>June 21</td>
-            <td>
-              <a href="#2" target="_blank">Frontend Developer</a>
-            </td>
-            <td>SoHo</td>
-          </tr>
-          <tr>
-            <td>June 20</td>
-            <td>
-              <a href="#3" target="_blank"> Senior Python Developer/Cofounder</a>
-            </td>
-            <td>Flatiron</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <section id="job-list">
 
-      <!-- Anchor tags should always be inside a list item or a paragraph, they never exist on their own -->
-    </section>
+        <ul class="job-line-item">
+          <li>Date</li>
+          <li>Job</li>
+          <li>Location</li>
+        </ul>
 
-    <nav id="nav-ctrl">
-      <!-- wrap list -->
-      <a href="#prev" class="navBox">
-        <div class="centerBox">
-          <img src="images/left_arrow.png"/>
-          <p>Prev</p>
+        <ul class="job-line-item">
+          <li>June 22</li>
+          <li><a href="#1" target="_blank">Technical Project Manager</a></li>
+          <li>Midtown East</li>
+        </ul>
+
+        <ul class="job-line-item">
+          <li>June 21</li>
+          <li><a href="#2" target="_blank">Frontend Developer</a></li>
+          <li>SoHo</li>
+        </ul>
+
+        <ul class="job-line-item">
+          <li>June 20</li>
+          <li><a href="#3">Senior Python Developer/Cofounder</a></li>
+          <li>Flatiron</li>
+        </ul>
+        <!-- Anchor tags should always be inside a list item or a paragraph, they never exist on their own -->
+      </section>
+
+      <nav id="nav-ctrl">
+        <!-- wrap list -->
+        <a href="#prev" class="navBox">
+          <div class="centerBox">
+            <img src="images/left_arrow.png"/>
+            <p>Prev</p>
+          </div>
+        </a>
+
+        <div class="navBox">
+          <p>1 to 10 of 34</p>
         </div>
-      </a>
 
-      <div class="navBox">
-        <p>1 to 10 of 34</p>
-      </div>
+        <!-- Anchor tag should never wrap a div which is a block level element, its the other way round. -->
+        <a href="#next" class="navBox">
+          <div class="centerBox">
+            <p>Next</p>
+            <img src="images/right_arrow.png"/>
+          </div>
+        </a>
 
-      <!-- Anchor tag should never wrap a div which is a block level element, its the other way round. -->
-      <a href="#next" class="navBox">
-        <div class="centerBox">
-          <p>Next</p>
-          <img src="images/right_arrow.png"/>
-        </div>
-      </a>
+      </nav>
 
-    </nav>
-
-  </main>
-
-</body>
-
+    </main>
+  </body>
 </html>
