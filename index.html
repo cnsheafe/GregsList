@@ -11,35 +11,26 @@
 
 <body>
 
-  <nav>
-    <ul>
-      <li>Greg's List</li>
-      <li><a href="#post">Account</a></li>
-      <li><a href="#account">Post</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav id="nav-top">
+      <ul>
+        <li>Greg's List</li>
+        <li><a href="#post">Account</a></li>
+        <li><a href="#account">Post</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
 
-    <form>
-      <label for="search-bar">Search Jobs</label>
-      <input type="text" placeholder="search software jobs" id="search-bar">
-      <!-- Look for what to put here it should not be a hyperlink -->
-      <a href="#search">
-        <img src="images/magnifying-glass.png">
-      </a>
-    </form>
-
+    <section>
+      <form>
+        <label for="search-bar">Search Jobs</label>
+        <input type="search" placeholder="search software jobs" id="search-bar">
+        <input type="image" src="images/magnifying-glass.png" id="search-button">
+      </form>
+    </section>
     <!-- I'd like to see use listings instead of table -->
-    <div id="jobList">
-      <div>
-        <input type="text" placeholder="search software jobs" id="search-bar">
-        <a href="#search">
-          <img src="images/magnifying-glass.png">
-        </a>
-      </div>
-
-    </form>
 
     <section id="jobList">
       <table>
@@ -77,8 +68,6 @@
       </table>
     </div>
 
-    <!-- This should be a nav tag -->
-    <div id="navCtrl">
       <!-- Anchor tags should always be inside a list item or a paragraph, they never exist on their own -->
     </section>
 
