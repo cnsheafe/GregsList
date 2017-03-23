@@ -7,7 +7,7 @@ header {
   margin-top: 0;
 }
 
-nav {
+#nav-top {
   width: 100%;
   height: 55px;
   position: fixed;
@@ -15,7 +15,7 @@ nav {
   background-color: seashell;
 }
 
-nav * {
+#nav-top * {
   margin-top: 5px;
   margin-bottom: 5px;
   display: inline-block;
@@ -70,6 +70,7 @@ form * {
 
 #search-button {
   height: 44px;
+  width: 4%;
   border: 1px solid black;
 }
 
@@ -114,28 +115,33 @@ form * {
   display: flex;
   flex-direction: row;
   font-size: 25px;
-  margin: 25px auto;
   background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-.navBox {
-  width: 33.33%;
-  border: 2px solid black;
-  border-radius: 4px;
-  margin-right: 0px;
-  display: flex;
-  flex-direction: row;
+#nav-ctrl * {
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+  display: inline-block;
 }
 
-.navBox > p {
-  margin-left: 25%;
-  margin-right: 25%;
+#nav-ctrl ul {
+  padding-left: 0px;
+  margin: 0 auto;
+}
+
+#nav-ctrl button, #nav-ctrl img {
+  height: 50%;
   width: 50%;
 }
-.centerBox {
-  margin: 0 auto;
-  display: flex;
-  text-align: center;
+#nav-ctrl button, #nav-ctrl p {
+  border: 2px solid black;
+}
+#nav-ctrl p {
+  font-size: 20px;
+  //width: 90px;
 }
 
 @media only screen and (min-width: 1400px) {
