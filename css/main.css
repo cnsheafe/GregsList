@@ -141,7 +141,15 @@ form * {
 }
 #nav-ctrl p {
   font-size: 20px;
-  //width: 90px;
+  width: 120px;
+}
+
+#nav-ctrl form {
+  margin-top: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1400px) {
