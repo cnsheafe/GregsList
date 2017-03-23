@@ -72,7 +72,7 @@ form * {
   border: 1px solid black;
 }
 
-#jobList {
+#job-list {
   margin-top: 40px;
   line-height: 2em;
   font-size: 30px;
@@ -93,7 +93,7 @@ td {
   padding-right: 10px;
 }
 
-#navCtrl {
+#nav-ctrl {
   width: 100%;
   text-align: center;
   position: static;
